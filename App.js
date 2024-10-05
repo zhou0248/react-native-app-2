@@ -45,11 +45,11 @@ export default function App() {
     setRefreshing(true);
     get10NewUsers();
     setRefreshing(false);
-  }, []);
+  });
 
   const onPress = useCallback(() => {
     getOneUser();
-  }, []);
+  });
 
   useEffect(() => {
     get10NewUsers();
